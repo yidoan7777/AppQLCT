@@ -49,3 +49,11 @@
 - **Min SDK**: 24 (Android 7.0 Nougat)
 - **Target SDK**: 36
 - **Version**: 1.0
+
+## 📦 Vị trí file APK
+
+File APK sau khi build sẽ được tạo tại:
+```
+app/build/outputs/apk/release/app-release.apk
+```
+
