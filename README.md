@@ -52,8 +52,7 @@
 
 ## 📦 Vị trí file APK
 
-File APK sau khi build sẽ được tạo tại:
 ```
-app/build/outputs/apk/release/app-release.apk
+app/build/outputs/apk/release/Yidoan.apk
 ```
 
