@@ -1,0 +1,390 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+    
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="login_uppercase">LOGIN</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password_email_sent">Password reset email has been sent</string>
+    <string name="reset_password_error">Error sending password reset email</string>
+    <string name="enter_email_to_reset">Enter email to reset password</string>
+    <string name="send_reset_email">Send Email</string>
+    <string name="otp_code">OTP Code</string>
+    <string name="otp_sent">OTP code has been sent to your email</string>
+    <string name="otp_resent_success">OTP code resent successfully</string>
+    <string name="otp_verified_success">OTP verification successful</string>
+    <string name="otp_invalid_length">OTP code must be 6 digits</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="passwords_do_not_match">Passwords do not match</string>
+    <string name="please_verify_otp_first">Please verify OTP first</string>
+    <string name="password_reset_link_sent">Password reset link has been sent to your email</string>
+    <string name="reset_password_title">Reset Password</string>
+    <string name="logout">Logout</string>
+    <string name="login_success">Login successful</string>
+    <string name="register_success">Registration successful</string>
+    <string name="login_error">Login failed</string>
+    <string name="register_error">Registration failed</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="login_with_google">Sign in with Google</string>
+    <string name="google_sign_in_error">Google sign-in error</string>
+    
+    <!-- Google Sign-In Web Client ID - Get from google-services.json (client_type 3) -->
+    <string name="default_web_client_id" translatable="false">759519158772-mpvfdb29cljl836paglauuancr70tab6.apps.googleusercontent.com</string>
+    
+    <!-- Navigation Menu -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_transactions">Transactions</string>
+    <string name="nav_budget">Budget</string>
+    <string name="nav_report">Report</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_feedback">Send Feedback</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_recurring_expenses">Recurring Expenses</string>
+    <string name="nav_admin_users">Manage Users</string>
+    <string name="nav_admin_categories">Manage Categories</string>
+    <string name="nav_admin_report">System Reports</string>
+    <string name="nav_maintenance">System Maintenance</string>
+    
+    <!-- Transactions -->
+    <string name="add_transaction">Add Transaction</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="note">Note</string>
+    <string name="date">Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="no_transactions">No transactions yet</string>
+    
+    <!-- Budget -->
+    <string name="budget_limit">Spending Limit</string>
+    <string name="current_spending">Current Spending</string>
+    <string name="remaining_budget">Remaining Budget</string>
+    <string name="set_budget">Set Budget</string>
+    <string name="budget_warning">Warning: You have exceeded your spending limit!</string>
+    <string name="add_budget">Add Budget</string>
+    <string name="edit_budget">Edit Budget</string>
+    <string name="delete_budget">Delete Budget</string>
+    <string name="delete_budget_confirm">Are you sure you want to delete budget for category \"%1$s\" (%2$s)?</string>
+    <string name="no_budget_found_for_category">No budget found for this category</string>
+    <string name="cannot_delete_budget_invalid_id">Cannot delete budget: Invalid ID</string>
+    <string name="delete_budget_failed">Delete budget failed: %1$s</string>
+    <string name="total_budget">Total Budget</string>
+    <string name="budget_by_category">Budget by Category</string>
+    <string name="no_budgets">No budgets yet</string>
+    <string name="budget_added">Budget added successfully</string>
+    <string name="budget_updated">Budget updated successfully</string>
+    <string name="budget_deleted">Budget deleted successfully</string>
+    <string name="budget_exists">Budget already exists for this category</string>
+    
+    <!-- Report -->
+    <string name="report_title">Expense Report</string>
+    <string name="total_income">Total Income</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="balance">Balance</string>
+    <string name="expense_by_category">Expense by Category</string>
+    <string name="budget">Budget</string>
+    
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="change_name">Change Name</string>
+    <string name="update_success">Update successful</string>
+    <string name="update_error">Update failed</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="change_password_title">Change Password</string>
+    <string name="password_changed_success">Password changed successfully</string>
+    <string name="password_change_error">Password change failed</string>
+    <string name="wrong_old_password">Old password is incorrect</string>
+    <string name="same_password">New password must be different from old password</string>
+    <string name="cannot_change_password_social">Cannot change password for social login account</string>
+    
+    <!-- Feedback -->
+    <string name="feedback">Feedback</string>
+    <string name="feedback_hint">Enter your feedback...</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="feedback_sent">Feedback sent successfully</string>
+    <string name="your_rating">Your Rating</string>
+    <string name="comment">Comment</string>
+    <string name="filter_by">Filter by:</string>
+    
+    <!-- Admin -->
+    <string name="admin_panel">Admin Panel</string>
+    <string name="users_list">Users List</string>
+    <string name="no_users">No users</string>
+    <string name="delete_user">Delete User</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="categories_list">Categories List</string>
+    <string name="add_category">Add Category</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_type">Category Type</string>
+    <string name="category_icon">Icon</string>
+    <string name="no_categories">No categories</string>
+    <string name="system_reports">System Reports</string>
+    <string name="total_users">Total Users</string>
+    <string name="total_transactions">Total Transactions</string>
+    <string name="system_income">System Total Income</string>
+    <string name="system_expense">System Total Expense</string>
+    <string name="maintenance_mode">Maintenance Mode</string>
+    <string name="enable_maintenance">Enable Maintenance</string>
+    <string name="disable_maintenance">Disable Maintenance</string>
+    <string name="maintenance_enabled">System is under maintenance</string>
+    <string name="maintenance_disabled">System is operating normally</string>
+    
+    <!-- Common -->
+    <string name="loading">Loading...</string>
+    <string name="error">An error occurred</string>
+    <string name="confirm">Confirm</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="required_field">This field is required</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="password_too_short">Password must be at least 6 characters</string>
+    
+    <!-- Additional strings for hardcoded text -->
+    <string name="welcome_back">Welcome back!</string>
+    <string name="welcome_new_user">Welcome new user!</string>
+    <string name="password_reset_email_sent_title">Password reset email sent</string>
+    <string name="password_reset_email_sent_message">We have sent a password reset link to email: %1$s\n\nPlease check your email and click the link to reset your password.</string>
+    <string name="google_sign_in_config_error">Google Sign-In configuration error</string>
+    <string name="google_sign_in_config_error_message">SHA-1 fingerprint has not been added to Firebase Console.\n\nHow to fix:\n1. Run script: get-sha1-fingerprint.ps1\n2. Copy SHA-1 fingerprint\n3. Go to Firebase Console > Project Settings > Your apps\n4. Select Android app and add SHA-1 fingerprint\n5. Download google-services.json again\n6. Rebuild app\n\nSee SHA1_FINGERPRINT.txt file for details.</string>
+    <string name="google_sign_in_not_configured">Google Sign-In is not configured. Please check Firebase configuration.</string>
+    <string name="security_error">Security error: %1$s</string>
+    <string name="error_occurred">Error: %1$s</string>
+    <string name="unknown">Unknown</string>
+    <string name="all">All</string>
+    <string name="all_transactions">All Transactions</string>
+    <string name="all_months">All Months</string>
+    <string name="this_month_budget">This month budget: %1$s</string>
+    <string name="this_month_budget_default">This month budget: 0 VND</string>
+    <string name="month_budget">Budget %1$s: %2$s</string>
+    <string name="no_expense_categories">No expense categories yet.</string>
+    <string name="no_expense_categories_message">No expense categories yet. Please initialize categories in Category Management.</string>
+    <string name="error_loading_categories">Error loading categories: %1$s</string>
+    <string name="admin">Administrator</string>
+    <string name="user">User</string>
+    <string name="delete_transaction">Delete Transaction</string>
+    <string name="delete_transaction_confirm">Are you sure you want to delete this transaction?</string>
+    <string name="cannot_delete_transaction_invalid_id">Cannot delete transaction: Invalid ID</string>
+    <string name="delete_transaction_success">Transaction deleted successfully</string>
+    <string name="delete_transaction_failed">Delete transaction failed: %1$s</string>
+    <string name="delete_recurring_expense_confirm">Are you sure you want to delete this recurring expense?</string>
+    <string name="cannot_delete_recurring_expense">Cannot delete this recurring expense</string>
+    <string name="delete_recurring_expense_success">Recurring expense deleted successfully</string>
+    <string name="delete_recurring_expense_failed">Delete recurring expense failed</string>
+    <string name="budget_warning_title">⚠️ Budget Warning</string>
+    <string name="budget_warning_message">Warning: You have spent %.1f%% of this month\'s budget!\n\nPlease be careful with your spending.</string>
+    <string name="budget_warning_detailed">⚠️ Warning: You have spent %.1f%% of this month\'s budget!\n\nBudget: %,.0f VND\nSpent: %,.0f VND\nRemaining: %,.0f VND\n\nPlease be careful with your spending!</string>
+    <string name="delete_all_notifications_confirm">Are you sure you want to delete all notifications?</string>
+    <string name="delete_category_success">Category deleted successfully</string>
+    <string name="delete_user_success">User deleted successfully</string>
+    <string name="role">Role: %1$s\n\n</string>
+    <string name="budget_for_category">Budget: %1$s</string>
+    <string name="category_loading_error">Error loading categories: %1$s</string>
+    <string name="budget_label">Budget: %1$s</string>
+    <string name="remaining_label">Remaining: %1$s</string>
+    <string name="please_enter_amount">Please enter amount</string>
+    <string name="please_select_at_least_one_month">Please select at least one month</string>
+    <string name="budget_updated_for_months">Budget updated for %1$d month(s)</string>
+    <string name="budget_saved_for_months">Budget saved for %1$d month(s)</string>
+    <string name="month_format">Month %1$s</string>
+    <string name="total_budget_label">Total Budget: %1$s</string>
+    <string name="total_expense_label">Total Expense: %1$s</string>
+    <string name="remaining_label_detail">Remaining: %1$s</string>
+    <string name="transaction_count_label">Transaction Count: %1$d</string>
+    <string name="transaction_list_label">Transaction List:</string>
+    
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">Open menu</string>
+    <string name="navigation_drawer_close">Close menu</string>
+    
+    <!-- Additional UI strings -->
+    <string name="login_now">Login now</string>
+    <string name="register_now">Register now</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account? </string>
+    <string name="delete_all">Delete all</string>
+    <string name="expense_name">Expense Name</string>
+    <string name="role_label">Role</string>
+    <string name="no_expense_data">No expense data</string>
+    <string name="no_expense_by_category">No expense by category</string>
+    <string name="no_recurring_expenses">No recurring expenses</string>
+    <string name="name_label">Name: %1$s\n\n</string>
+    <string name="email_label">Email: %1$s\n\n</string>
+    <string name="gender_label">Gender: %1$s\n\n</string>
+    <string name="phone_label">Phone: %1$s\n\n</string>
+    <string name="budget_limit_label">Budget Limit: %1$s\n\n</string>
+    <string name="not_updated">Not updated</string>
+    <string name="delete_user_title">Delete User</string>
+    <string name="error_initializing_categories">Error initializing categories: %1$s</string>
+    <string name="error_loading_recurring_expenses">Error loading recurring expenses: %1$s</string>
+    <string name="error_loading_transactions">Error loading transactions: %1$s</string>
+    <string name="old_password_incorrect">Old password is incorrect</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="password_reset_email_error">Error sending password reset email</string>
+    <string name="email_not_registered">This email is not registered in the system</string>
+    <string name="email_not_registered_error">Email not registered</string>
+    <string name="invalid_email_error">Invalid email</string>
+    <string name="network_error">Network connection error. Please check your internet connection and try again</string>
+    <string name="network_error_title">No Internet Connection</string>
+    <string name="network_error_message">Unable to connect to the internet. Please check your network connection and try again.</string>
+    <string name="retry">Retry</string>
+    <string name="check_network_settings">Check Network Settings</string>
+    <string name="internal_error">Internal error. Please try again later.</string>
+    <string name="sign_in_cancelled">Sign-in was cancelled.</string>
+    <string name="deleted_transactions">Deleted %1$d/%2$d transactions. Error: %3$s</string>
+    
+    <!-- Recurring Expenses -->
+    <string name="recurring_expenses_title">Recurring Expenses</string>
+    <string name="expense_date">Expense Date</string>
+    <string name="expense_type">Expense Type</string>
+    
+    <!-- Transaction Table -->
+    <string name="view_all">View All</string>
+    <string name="show_all">Show All</string>
+    <string name="select_month_year">Select Month/Year</string>
+    <string name="category_label">Category:</string>
+    
+    <!-- Budget -->
+    <string name="previous_month">Previous Month</string>
+    <string name="next_month">Next Month</string>
+    <string name="current_month">Current Month</string>
+    <string name="add_budget_button">+ Add Budget</string>
+    <string name="total_budget_this_month">Total Budget This Month</string>
+    <string name="spent">Spent</string>
+    <string name="remaining">Remaining</string>
+    <string name="select_category_to_add_budget">Select Category to Add Budget</string>
+    <string name="budget_amount">Budget Amount</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="enter_note_optional">Enter note (optional)</string>
+    <string name="recurring_expense">Recurring expense</string>
+    <string name="period">Period:</string>
+    <string name="from_month">From month:</string>
+    <string name="to_month">To month:</string>
+    <string name="select_month">Select Month</string>
+    <string name="month_january">January</string>
+    <string name="month_february">February</string>
+    <string name="month_march">March</string>
+    <string name="month_april">April</string>
+    <string name="month_may">May</string>
+    <string name="month_june">June</string>
+    <string name="month_july">July</string>
+    <string name="month_august">August</string>
+    <string name="month_september">September</string>
+    <string name="month_october">October</string>
+    <string name="month_november">November</string>
+    <string name="month_december">December</string>
+    
+    <!-- Report -->
+    <string name="time_label">Time:</string>
+    <string name="number_of_transactions">Number of Transactions</string>
+    <string name="no_previous_month_data">No previous month data to compare</string>
+    <string name="details_by_category">Details by Category</string>
+    <string name="change_expense">Change Expense</string>
+    <string name="change_transaction_count">Change Number of Transactions</string>
+    
+    <!-- Validation Messages -->
+    <string name="please_initialize_categories">Please initialize categories before adding transaction</string>
+    <string name="please_select_category">Please select category</string>
+    <string name="amount_must_be_greater_than_zero">Amount must be greater than 0</string>
+    <string name="invalid_amount">Invalid amount</string>
+    <string name="please_select_recurring_period">Please select recurring period</string>
+    
+    <!-- Category Management -->
+    <string name="add_category_success">Category added successfully</string>
+    <string name="update_category_success">Category updated successfully</string>
+    <string name="delete_category_confirm">Are you sure you want to delete category \"%1$s\"?</string>
+    <string name="initialize_default_categories_title">Initialize Default Categories</string>
+    <string name="initialize_default_categories_message">Do you want to initialize default categories (Expense)?\n\nThese categories will be added to the system.</string>
+    <string name="agree">Agree</string>
+    <string name="initializing">Initializing...</string>
+    <string name="initialize_default_categories">Initialize Default Categories</string>
+    
+    <!-- Budget Warning -->
+    <string name="budget_warning_notification">You have spent %.1f%% of this month\'s budget!\nBudget: %,.0f VND\nSpent: %,.0f VND\nRemaining: %,.0f VND</string>
+    
+    <!-- Category Fragment -->
+    <string name="can_only_view_expense_category_transactions">Can only view transactions of expense categories</string>
+    
+    <!-- Report Fragment -->
+    <string name="category_label_pie_chart">Category</string>
+    <string name="deleted_category">Deleted Category</string>
+    <string name="cancel_button">Cancel</string>
+    
+    <!-- Category Management -->
+    <string name="no_permission_access">You do not have permission to access this feature</string>
+    
+    <!-- Transaction -->
+    <string name="end_month_must_be_after_start_month">End month must be after start month</string>
+    <string name="edit_transaction_success">Transaction updated successfully</string>
+    <string name="add_transaction_success">Transaction added successfully</string>
+    <string name="understood">Understood</string>
+    
+    <!-- Report -->
+    <string name="view_by_year">View by Year</string>
+    <string name="financial_overview">Financial Overview</string>
+    <string name="default_amount">0 VND</string>
+    <string name="compare_with_previous_month">Compare with Previous Month</string>
+    <string name="transaction_list">Transaction List</string>
+    <string name="default_month_year">January 2024</string>
+    <string name="default_change">+0 VND (0%)</string>
+    
+    <!-- Notification -->
+    <string name="success">Success</string>
+    <string name="notification">Notification</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="no_notifications">No notifications</string>
+    <string name="you_will_receive_notifications_here">You will receive notifications here</string>
+    <string name="deleted_category_text">Deleted Category</string>
+    <string name="notification_title_placeholder">Notification Title</string>
+    <string name="notification_message_placeholder">Notification Message</string>
+    <string name="today">Today</string>
+    
+    <!-- Additional Vietnamese text replacements -->
+    <string name="budget_colon">Budget:</string>
+    <string name="spent_label">Spent:</string>
+    <string name="remaining_label_colon">Remaining:</string>
+    <string name="phone">Phone</string>
+    <string name="clear_old_data">Clear Old Data</string>
+    <string name="backup_data">Backup Data</string>
+    <string name="restore_data">Restore Data</string>
+    <string name="top_spending_category">Top Spending Category</string>
+    <string name="current_month_statistics">Current Month Statistics</string>
+    <string name="expense_colon">Expense:</string>
+    <string name="budget_label_colon">Budget:</string>
+    <string name="transaction_count_colon">Transaction Count:</string>
+    <string name="clear_old_data_title">Clear Old Data</string>
+    <string name="clear_old_data_message">Do you want to delete all transactions older than 1 year?\n\nThis action cannot be undone!</string>
+    <string name="transaction_count_format">(%1$d transactions)</string>
+    <string name="not_updated_text">Not updated</string>
+    <string name="user_name_hint">User Name</string>
+    <string name="edit_content_description">Edit</string>
+    <string name="delete_content_description">Delete</string>
+    <string name="no_data">No data</string>
+    <string name="transactions_count">%1$d transactions</string>
+    <string name="categories_initialized">Initialized %1$d default categories</string>
+    <string name="error_deleting_old_categories">Error deleting old categories</string>
+    <string name="error_getting_categories_list">Error getting categories list</string>
+    <string name="unknown_error_message">Unknown error</string>
+    <string name="no_income_categories_to_initialize">No default income categories to initialize</string>
+</resources>

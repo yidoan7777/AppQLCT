@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 
+        Network Security Config để fix lỗi "Failed to resolve name" 
+        từ ManagedChannelImpl (Firebase/Google Services)
+        
+        LƯU Ý: Chỉ dùng cho DEBUG. 
+        Cho production, nên xóa cleartextTrafficPermitted="true"
+    -->
+    
+    <!-- Cho phép cleartext traffic cho localhost (emulator) -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+    
+    <!-- Base config - Cho phép tất cả domains (CHỈ CHO DEBUG) -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+

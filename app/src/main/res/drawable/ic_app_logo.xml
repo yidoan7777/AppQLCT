@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,10C32.4,10 10,32.4 10,60C10,87.6 32.4,110 60,110C87.6,110 110,87.6 110,60C110,32.4 87.6,10 60,10Z"/>
+    
+    <!-- Wallet Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,40L25,80L95,80L95,40L25,40ZM30,45L90,45L90,75L30,75L30,45Z"/>
+    
+    <!-- Wallet Flap -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M25,40L60,40L60,32L25,32L25,40Z"/>
+    
+    <!-- Dollar Sign -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M52,55L52,62L48,62L48,66L52,66L52,72L56,72L56,66L63,66L63,62L56,62L56,55L52,55ZM52,68L52,75L63,75L63,80L48,80L48,85L65,85L65,68L52,68Z"/>
+</vector>
+

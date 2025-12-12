@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AppQLCT" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryVariant">@color/green_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.AppQLCT.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AppQLCT.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <!-- NavigationView Style -->
+    <style name="NavigationViewStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemIconTint">@color/nav_menu_icon_color</item>
+        <item name="itemTextColor">@color/nav_menu_text_color</item>
+        <item name="itemBackground">@drawable/nav_menu_item_background</item>
+        <item name="itemRippleColor">@color/nav_menu_ripple</item>
+        <item name="itemShapeAppearanceOverlay">@style/NavMenuItemShape</item>
+        <item name="dividerInsetStart">72dp</item>
+        <item name="dividerInsetEnd">0dp</item>
+        <item name="android:divider">@drawable/nav_menu_divider</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    
+    <style name="NavMenuItemShape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+</resources>

@@ -1,0 +1,89 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper function để kiểm tra user có phải admin không
+    function isAdmin() {
+      return request.auth != null && 
+             exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Users collection - user chỉ đọc/ghi được dữ liệu của chính mình, admin có thể đọc/ghi tất cả
+    match /users/{userId} {
+      // User có thể đọc/ghi dữ liệu của chính mình
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      // Admin có thể đọc/ghi tất cả users (bao gồm cả query collection)
+      allow read, write: if isAdmin();
+    }
+    
+    // Transactions collection - user chỉ đọc/ghi được transaction của mình, admin có thể đọc/xóa tất cả
+    match /transactions/{transactionId} {
+      // User có thể đọc/ghi transaction của mình
+      allow read, write: if request.auth != null && 
+        resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null && 
+        request.resource.data.userId == request.auth.uid;
+      // Admin có thể đọc và xóa tất cả transactions (cho báo cáo và maintenance)
+      allow read, delete: if isAdmin();
+    }
+    
+    // Categories collection - tất cả user đã đăng nhập đều đọc/ghi được
+    // (Categories là danh mục chung, app tự động khởi tạo khi cần)
+    match /categories/{categoryId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // Feedback collection - user chỉ tạo được feedback của mình
+    match /feedback/{feedbackId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && 
+        request.resource.data.userId == request.auth.uid;
+      allow update, delete: if request.auth != null && 
+        (resource.data.userId == request.auth.uid || 
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin');
+    }
+    
+    // Config collection - chỉ admin mới đọc/ghi được
+    match /config/{configId} {
+      allow read, write: if request.auth != null && 
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Budgets collection - user chỉ đọc/ghi được budget của mình, admin có thể đọc tất cả
+    match /budgets/{budgetId} {
+      // User có thể đọc/ghi budget của mình
+      allow read, write: if request.auth != null && 
+        resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null && 
+        request.resource.data.userId == request.auth.uid;
+      // Admin có thể đọc tất cả budgets (cho báo cáo)
+      allow read: if isAdmin();
+    }
+    
+    // OTP codes collection - cho phép tạo và đọc mã OTP (user chưa đăng nhập khi quên mật khẩu)
+    // Document ID là email, cho phép tạo/đọc để hỗ trợ tính năng quên mật khẩu
+    match /otp_codes/{email} {
+      // Cho phép tạo document mới (khi tạo mã OTP)
+      // Kiểm tra các field bắt buộc và định dạng đúng
+      allow create: if request.resource.data.keys().hasAll(['email', 'code', 'expiresAt', 'used', 'createdAt']) &&
+                      request.resource.data.email is string &&
+                      request.resource.data.code is string &&
+                      request.resource.data.expiresAt is timestamp &&
+                      request.resource.data.used is bool &&
+                      request.resource.data.createdAt is timestamp &&
+                      !request.resource.data.used &&
+                      request.resource.data.email == email;
+      
+      // Cho phép đọc document để verify mã OTP
+      allow read: if true;
+      
+      // Cho phép cập nhật document để đánh dấu mã OTP đã sử dụng
+      // Chỉ cho phép update field 'used' từ false sang true
+      allow update: if request.resource.data.used == true &&
+                      resource.data.used == false &&
+                      request.resource.data.diff(resource.data).affectedKeys().hasOnly(['used']);
+    }
+  }
+}
+

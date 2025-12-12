@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open CODE_DOCUMENTATION_PART1.html",
+            "file": "c:\\Users\\YIDOAN\\AndroidStudioProjects\\AppQLCT\\CODE_DOCUMENTATION_PART1.html"
+        }
+    ]
+}

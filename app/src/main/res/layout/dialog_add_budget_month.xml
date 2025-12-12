@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="500dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/budget_amount"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/enter_amount"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_month"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxAllMonths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/all_months"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkboxMonth1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_january"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_february"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_march"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_april"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_may"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_june"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_july"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_august"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_september"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_october"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_november"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkboxMonth12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/month_december"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

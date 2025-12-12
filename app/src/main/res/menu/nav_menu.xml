@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- User Menu Items -->
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/dashboard"
+        android:title="@string/nav_dashboard" />
+
+    <item
+        android:id="@+id/nav_transactions"
+        android:icon="@drawable/ic_menu_transactions"
+        android:title="@string/nav_transactions" />
+
+    <item
+        android:id="@+id/nav_budget"
+        android:icon="@drawable/ic_menu_budget"
+        android:title="@string/nav_budget" />
+
+    <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/ic_menu_report"
+        android:title="@string/nav_report" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_menu_profile"
+        android:title="@string/nav_profile" />
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:icon="@drawable/ic_menu_feedback"
+        android:title="@string/nav_feedback" />
+
+    <item
+        android:id="@+id/nav_categories"
+        android:icon="@drawable/ic_menu_categories"
+        android:title="@string/nav_categories" />
+
+    <item
+        android:id="@+id/nav_recurring_expenses"
+        android:icon="@drawable/ic_menu_transactions"
+        android:title="@string/nav_recurring_expenses" />
+
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/nav_notifications" />
+
+    <group android:id="@+id/group_admin">
+        <item
+            android:id="@+id/nav_admin_users"
+            android:icon="@drawable/ic_menu_admin_users"
+            android:title="@string/nav_admin_users"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_admin_categories"
+            android:icon="@drawable/ic_menu_admin_categories"
+            android:title="@string/nav_admin_categories"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_admin_report"
+            android:icon="@drawable/ic_menu_admin_report"
+            android:title="@string/nav_admin_report"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_maintenance"
+            android:icon="@drawable/ic_menu_maintenance"
+            android:title="@string/nav_maintenance"
+            android:visible="false" />
+    </group>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_menu_logout"
+        android:title="@string/logout" />
+
+</menu>
+

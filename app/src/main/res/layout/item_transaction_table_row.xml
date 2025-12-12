@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="8dp"
+    android:minHeight="48dp">
+
+    <!-- Tên chi tiêu (Note hoặc Category) -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="start|center_vertical"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <!-- Số tiền -->
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="end|center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- Ngày chi tiêu -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="none"
+        android:minWidth="80dp" />
+
+    <!-- Loại chi tiêu (Category) -->
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="start|center_vertical"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+</TableRow>
+
